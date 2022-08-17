@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    margin: 10rem auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    max-height: 750px;
+    
+    
+
+}
+
+.side{
+    width: 35%;
+    height: 100%;
+    background-image: url(/josefin-NeH6-YKTwUI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.side-content{
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100px;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.side-content img{
+    width: 65px;
+    
+
+}
+.side-content p{
+    font-size: 4.5rem;
+    font-family: 'Hanalei', sans-serif;
+    color: white;
+    margin-left: .5rem;
+}
+.end-text{
+    font-size: .5rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.side  span{
+    text-decoration: underline;
+}
+.right{
+    width: 65%;
+    height: 100%;
+    
+    padding-top: 4.5rem;
+    background: white;
+    
+}
+.right-text{
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 4%;
+}
+.right-text span{
+    font-style: italic;
+}
+.right-text .txt-shift{
+    margin-top: .8rem;
+}
+
+.right form{
+    width: 100%;
+    height: 40%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 ;
+    margin-top: 1.5rem;
+    padding-left: 4%;
+    
+
+}
+.form-statement{
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+form .col{
+    display: flex;
+    gap: 0;
+    margin-bottom: 1rem;
+}
+form .form-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    width: 50%;
+}
+.form-content label{
+    font-size: .6rem;
+    font-weight: bold;
+    font-family: 'Cabin Sketch', sans-serif;
+}
+.form-content input{
+    width: 80%;
+    border-radius: 3px;
+    border: .2px solid #E5E7EB;
+    height: 1.5rem;
+}
+
+.form-content input:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-color: rgb(62, 62, 206);
+    height: 1.5rem;
+    outline: none;
+}
+form .col-3{
+    
+}
+form button{
+   width: 25%;
+   height: 15%;
+   border: none;
+   border-radius: 6px;
+   background: #596D48;
+   font-size: 1.6vmin;
+   font-weight: bold;
+   color: white;
+   transition: transform 1s ease, box-shadow 1s ease;
+   cursor: pointer;
+}
+form button:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.right-end-text{
+    width: 100%;
+    padding-left: 4%;
+    display: flex;
+}
+.right-end-text p{
+    margin-right: .2rem;
+}
+.right-end-text a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .right{
+        padding-top: 2rem;
+    }
+    .right form{
+        height: 60%;
+    }
+    
+    .container{
+        height: 500px;
+    }
+    .right-end-text{
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-10px);
+    }
+}
+
