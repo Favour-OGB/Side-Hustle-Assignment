@@ -26,7 +26,7 @@ body{
 .side{
     width: 35%;
     height: 100%;
-    background-image: url(/josefin-NeH6-YKTwUI-unsplash.jpg);
+    background-image: url('josefin-NeH6-YKTwUI-unsplash.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
